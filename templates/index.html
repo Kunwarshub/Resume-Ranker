@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Resume Ranker</title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data"> <br>
+        <h1>Resume Ranker Form</h1>
+        <label for="name">Name: </label> <input type="text" name="name" id="name"><br>
+        <label for="job">Job Position: </label> <input type="textarea" name="job" id="job"><br>
+        <label for="resume">Upload Resume: </label><input type="file" name="resume" id="resume"><br>
+        <input type="submit" value="submit">
+    </form>
+
+    {% if result %}
+    <div style="margin-top: 20px;">
+        <h3>Match Score: {{ result }}%</h3>
+    </div>
+    {% endif %}
+
+</body>
+</html>
+

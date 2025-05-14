@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(190, 140, 104);
+    display: flex;
+    align-items: center;
+    align-content: center;  
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+form{
+    background-color: rgba(200, 90, 17, 0.504);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 150px; 
+    padding: 0px 10px 30px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5)
+}
+
+input{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    margin: 5px;
+}
